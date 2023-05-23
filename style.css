@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .header,.hero_content,.footer {
@@ -19,6 +20,10 @@
     font-size: 18px;
     
 }
+
+a {
+    font: 24px #f9faf8;
+}
 .links {
     display: flex;
     justify-content: space-between;
@@ -34,6 +39,7 @@
     padding-top: 3vw;
     padding-bottom: 3vw;
     color: antiquewhite;
+    font-size: 18px;
     align-items: center;
     gap: 32px;
    
@@ -45,8 +51,16 @@
     width: 35vw;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 24px;
+    min-width: 300px;
     
+}
+
+.hero_title {
+    font-size: 48px;
+    font-weight: bolder;
+    line-height: 32px;
+
 }
 
 .button {
@@ -54,8 +68,102 @@
     border-radius: 6px;
     padding: 0.5em 1.5em;
     width: fit-content;
+    height: fit-content;
+    font-weight: bold;
+    min-width:max-content;
+   
 }
 
 .hero_content>img {
     width: 35vw;
+    min-width: 400px;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 150px;
+}
+
+.card>img {
+    width: 150px;
+    height: 150px;
+    border: #3882f6 solid 1px;
+    border-radius: 10px;
+    object-fit: cover; 
+    object-position: center;
+    
+}
+
+.quote_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 15vw 75px;
+    gap: 10px;
+    background-color: #e5e7eb;
+    font-size: 24px; 
+    line-height: 24px;
+    font-weight: lighter;
+    font-style: italic;
+   
+}
+
+.author {
+    align-self:last baseline;
+    font-weight: bold;
+}
+
+.sign_up_banner {
+    background-color: #3882f6;
+    border-radius: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content:space-between;
+    margin: 100px 15vw ;
+    padding: 2em 3em;
+    gap: 32px;
+    align-items: center;
+}
+
+.call_to_action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.call_to_action_1 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.sign_up_banner>.button {
+    border: solid #ffffff 2px;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 25px 0px;
 }
